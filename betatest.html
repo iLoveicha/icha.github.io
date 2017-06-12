@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,7 +20,49 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Icha beta project</h1>
+		<style>
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+</style>
+
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--waterfall">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Home</span>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+      
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="waterfall-exp">
+        </div>
+      </div>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Downloads</a>
+      <a class="mdl-navigation__link" href="">Blog</a>
+      <a class="mdl-navigation__link" href="">Wiki</a>
+      <a class="mdl-navigation__link" href="">Leave beta test</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">	<h1>Icha beta project</h1>
+	</div>
+  </main>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
